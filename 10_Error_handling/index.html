@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <!-- <script src="app.js"></script> -->
+  <body>
+    <h1>DOM Erropr handling</h1>
+    <h2 id="error">error</h2>
+    <h3 id="massege"></h3>
+    <script>
+      try {
+        var result = Sum(10, 20); //sum is not defical yet
+      } catch (ex) {
+        document.getElementById("error").innerHTML += ex;
+      } finally {
+        document.getElementById("massege").innerHTML = "finally block executed";
+      }
+    </script>
+  </body>
+</html>
